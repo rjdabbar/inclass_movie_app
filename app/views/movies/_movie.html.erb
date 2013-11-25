@@ -1,0 +1,6 @@
+<%= link_to "Home", root_path %>
+<% @movies.each do |movie| %>
+  <h2> <%= movie.title %> </h2>
+  <p> This movie is about: <%= movie.description %>. It was released in: <%= movie.year_released %> </p>
+  <p>It has a user rating of: <%= movie.rating %> </p>
+<% end %>

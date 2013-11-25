@@ -1,2 +1,16 @@
 <h1>Welcome to RetFlix!</h1>
-<p>See our colletion of movies below.</p>
+<h3>See our colletion of movies below.</h3>
+
+<%= form_tag '/search', method: :get do %>
+  <%= label_tag 'q', "Search:" %>
+  <%= text_field_tag 'q' %>
+  <%= submit_tag "Search"%>
+<% end %>
+
+<%= link_to "Enter a new movie", new_movie_path %>
+
+<% @movies.each do |movie| %>
+  <p><%= "#{movie.title} was released in #{movie.year_released}. #{movie.description}" %></p>
+  <%= link_to "Edit", edit_movie_path(movie) %>
+<% end %>
+

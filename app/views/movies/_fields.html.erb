@@ -1,0 +1,18 @@
+<%= form_for @movie do |m| %>
+  <%= m.label :title  %>
+  <%= m.text_field :title %>
+
+  <%= m.label :description %>
+  <%= m.text_field :description %>
+
+  <%= m.label :year_released %>
+  <%= m.text_field :year_released %>
+
+  <%= m.label :rating %>
+  <%= m.text_field :rating %>
+
+  <%= m.submit %>
+
+<% end %>
+
+<%= link_to "Home", root_path %>
