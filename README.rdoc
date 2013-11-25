@@ -1,5 +1,4 @@
 == README
 
-I accidentally seeded the database twice, hence the duplicates. Also I've added a few films. 
 
 The app has everything other than the validations necessary. Also I'm looking to implement a "destroy/DELETE" function as well. 
