@@ -1,4 +1,6 @@
 == README
 
 
-The app has everything other than the validations necessary. Also I'm looking to implement a "destroy/DELETE" function as well. 
+Added validations. 
+
+The messages aren't displaying for some reason. I added a partial to handle them and put the render in the fields partial, but that didnt work. 
