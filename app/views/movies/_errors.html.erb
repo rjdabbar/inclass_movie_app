@@ -2,10 +2,9 @@
         <div>
             <p>Errors:</p>
             <ul>
-            <%= @movie.errors.full_messages.each do |message| %>
+            <% @movie.errors.full_messages.each do |message| %>
                 <li><%= message %></li>
             <% end %>
             </ul>   
         </div>
-
-    <% end %>
+<% end %>
