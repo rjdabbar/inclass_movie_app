@@ -13,7 +13,7 @@
   <p><%= "#{movie.title} was released in #{movie.year_released}. #{movie.description}" %></p>
  
   <%= link_to "Edit", edit_movie_path(movie) %>
-  <%= link_to "Delete", movie, method: :delete %>
+  <%= link_to "Delete", movie, method: :delete, data: { confirm: "Are you sure?"}  %>
   <%= link_to "View Details", movie %>
  
 <% end %>
